@@ -1016,6 +1016,7 @@ if (typeof Object.create !== 'function') {
 		},
 
 		animationCallback: function (go) {
+            $('.panel-wrapper').animate({opacity:0.1});//TODO move to main.js FS
 			var self = this;
 			if (!self.dontCallback || go) {
 				setTimeout(function () {self.options.callbackFunction.call(this); }, self.options.slideEaseDuration + 50);

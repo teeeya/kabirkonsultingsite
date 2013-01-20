@@ -14,7 +14,7 @@
     <script src="js/slider/jquery-1.8.2.min.js"></script>
     <script src="js/slider/jquery-ui-1.8.20.custom.min.js"></script>
 
-    <script src="js/slider/jquery.liquid-slider-1.1.min.js"></script>
+    <script src="js/slider/jquery.liquid-slider-1.1.js"></script>
 
     <!-- gallery -->
     <link href="css/gallery/shCore.css" rel="stylesheet" type="text/css"/>
@@ -42,28 +42,16 @@
 
     <script type="text/javascript">
         $(function () {
-
+            $('.liquid-nav li a').live('click', function(){
+                $('.panel-wrapper').animate({opacity:0.1});
+            });
             /* Here is the slider using default settings */
-            $('#slider-id').liquidSlider();
-            /* If you want to adjust the settings, you set an option
-             as follows:
-
-             $('#slider-id').liquidSlider({
-             autoSlide:false,
-             autoHeight:false
-             });
-
-             Find more options at http://liquidslider.kevinbatdorf.com/
-             */
-
-            /* If you need to access the internal property or methods, use this method.
-
-             var sliderObject = $.data( $('#slider-id')[0], 'liquidSlider');
-             console.log(sliderObject);
-
-             */
-
-
+            $('#slider-id').liquidSlider({
+                slideEaseFunction: 'easeOutExpo',
+                slideEaseDuration: 1000,
+                callbackFunction: function(){$('.panel-wrapper').animate({opacity:1});},
+                dynamicArrows: false
+            });
         });
     </script>
 </head>
