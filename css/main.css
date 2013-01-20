@@ -1,3 +1,7 @@
+h1 {
+    margin:60px 60px 60px 10px;
+}
+
 body {
     margin: 0 auto;
     max-width: 1024px;
@@ -6,6 +10,12 @@ body {
     color: #666;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: none;
+}
+
+.gallery {
+    width:100%;
+    max-width:500px;
+    float:right;
 }
 
 .footcontent {
@@ -42,8 +52,8 @@ body {
 }
 
 .left {
-
     float: left;
+    max-width:400px;
 }
 
 p {
@@ -53,18 +63,6 @@ p {
 
 }
 
-.right {
-    max-width: 550px;
-    float: right;
-
-}
-
-.gallery {
-    width: 400px;
-    padding: 0px 40px 50px;
-    float: right;
-
-}
 
 a, a:visited {
     color: #C30;
@@ -72,10 +70,6 @@ a, a:visited {
     /*border-bottom: 1px dotted #C30;*/
 }
 
-a:hover {
-    color: #900;
-    border-bottom-style: solid;
-}
 
 /* scrolling */
 
@@ -139,12 +133,16 @@ Class name automatically added to element */
 
 /* Large desktop */
 @media (min-width: 1200px) {
-    ...
+    .gallery {
+        float:right;
+    }
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-
+@media (max-width: 1200px) {
+    .gallery {
+        float:left;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -154,6 +152,6 @@ Class name automatically added to element */
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    ...
+
 }
 
