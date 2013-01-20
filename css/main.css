@@ -165,6 +165,7 @@ Class name automatically added to element */
 /* Portrait tablet to landscape and desktop */
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 1200px) {
+
     .gallery {
         float:left;
         max-width: 1024px;
@@ -186,23 +187,26 @@ Class name automatically added to element */
      margin: 0 auto;
     max-width: 1024px;
     font: 40px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
     }
     
     .simply-scroll .simply-scroll-clip {
     max-width: 1000px;
     
     }
+    
+    
+
 }
 
 
 
 
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 
-
-
-
+}
 
 
 
