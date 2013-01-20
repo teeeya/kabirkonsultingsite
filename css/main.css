@@ -1,8 +1,24 @@
+
+
+
 h1 {
     margin:60px 60px 60px 10px;
 }
 
 body {
+/** background: url('../img/back.png') center center;
+ background-repeat: repeat; **/
+
+	background: url('../img/back.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.everything{
+
     margin: 0 auto;
     max-width: 1024px;
     font: 12px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,7 +26,10 @@ body {
     color: #666;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: none;
+	padding: 0px 20px 0px;
+
 }
+
 
 .gallery {
     width:100%;
@@ -21,7 +40,6 @@ body {
 .footcontent {
     /**background-image:url('../img/subtle-wood.gif');
     background-repeat: repeat; **/
-    max-width: 1024px;
     margin: 5px;
     padding-top: 20px;
     clear: both;
@@ -29,11 +47,13 @@ body {
 }
 
 .headcontent {
-    max-width: 1024px;
-    margin: 5px;
-    /* background: url('../img/newheader2.png') left center; */
+
+    background: url('../img/header.png') center center; 
     background-repeat: no-repeat;
-    background-size: 100%
+    padding-bottom: 100px;
+    width: 1024px;
+ margin-left: auto;   margin-right: auto;   
+
 }
 
 .maincontent {
@@ -55,6 +75,10 @@ body {
     float: left;
     max-width:400px;
 }
+
+
+
+
 
 p {
     text-align: justify;
@@ -110,21 +134,20 @@ Class name automatically added to element */
 
 /* Container DIV */
 .simply-scroll {
-    width: 1024px;
+    width: 1010px;
     height: 80px;
     margin-bottom: 1em;
 }
 
 /* Clip DIV */
 .simply-scroll .simply-scroll-clip {
-    width: 1024px;
+    width: 1010px;
     height: 80px;
 }
 
 /* Explicitly set height/width of each list item */
 .simply-scroll .simply-scroll-list li {
     float: left; /* Horizontal scroll only */
-
     height: 40px;
     margin: 5px;
 }
