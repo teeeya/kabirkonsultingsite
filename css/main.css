@@ -62,6 +62,7 @@ body {
     position: relative;
     margin: 5px;
     padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .bodyimage {
@@ -162,9 +163,11 @@ Class name automatically added to element */
 }
 
 /* Portrait tablet to landscape and desktop */
+/* Portrait tablet to landscape and desktop */
 @media (max-width: 1200px) {
     .gallery {
         float:left;
+        max-width: 1024px;
         
     }
     
@@ -182,15 +185,27 @@ Class name automatically added to element */
     .everything{
      margin: 0 auto;
     max-width: 1024px;
-    font: 22px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 40px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     }
     
     .simply-scroll .simply-scroll-clip {
-    max-width: 900px;
+    max-width: 1000px;
     
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
