@@ -14,6 +14,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	min-width: 1024px;
 }
 
 
@@ -169,8 +170,34 @@ Class name automatically added to element */
 @media (max-width: 1200px) {
     .gallery {
         float:left;
+        
+    }
+    
+    .left{
+    max-width: 100%;
+    
+    }
+    
+    
+    .headcontent{
+    max-width: 1024px;
+    
+
+    }
+    .everything{
+     margin: 0 auto;
+    max-width: 1024px;
+    font: 22px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    
+    .simply-scroll .simply-scroll-clip {
+    max-width: 900px;
+    
     }
 }
+
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
