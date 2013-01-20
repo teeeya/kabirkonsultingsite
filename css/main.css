@@ -187,6 +187,7 @@ Class name automatically added to element */
      margin: 0 auto;
     max-width: 1024px;
     font: 40px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-height: 100%;
     }
     
     .simply-scroll .simply-scroll-clip {
@@ -194,7 +195,9 @@ Class name automatically added to element */
     
     }
     
-    
+    .simply-scroll {
+        max-width: 1000px;
+    }
 
 }
 
