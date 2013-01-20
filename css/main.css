@@ -25,9 +25,13 @@ body {
     -webkit-text-size-adjust: none;
 	padding: 10px 20px 0px;
 	
+	/** rounded corners **/
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
+	
+	/** box shadow **/
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.28);
 
 }
 
