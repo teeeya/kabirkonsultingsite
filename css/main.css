@@ -165,12 +165,105 @@ Class name automatically added to element */
 
 /* Portrait tablet to landscape and desktop */
 /* Portrait tablet to landscape and desktop */
-@media (max-width: 1200px) {
+@media only screen 
+and (min-width: 600px)
+and (max-width: 900px) {
+
+ .gallery {
+	max-width: 75%;
+
+
+        
+    }
+    
+    .left{
+    max-width: 100%;
+    }
+    
+    
+    .headcontent{
+    max-width: 800px;
+    
+
+    }
+    .everything{
+     margin: 0 auto;
+    max-width: 800px;
+    font: 14px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    
+    .simply-scroll .simply-scroll-clip {
+    max-width: 700px;
+    
+    }
+    
+    .simply-scroll {
+        max-width: 700px;
+    }
+	
+	
+
+
+}
+
+
+
+@media only screen 
+and (min-width: 500px)
+and (max-width: 800px) {
+
+ .gallery {
+max-width: 100%;
+
+
+        
+    }
+    
+    .left{
+    max-width: 100%;
+    }
+    
+    
+    .headcontent{
+    max-width: 800px;
+    
+
+    }
+    .everything{
+     margin: 0 auto;
+    max-width: 800px;
+    font: 14px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    
+    .simply-scroll .simply-scroll-clip {
+    max-width: 700px;
+    
+    }
+    
+    .simply-scroll {
+        max-width: 700px;
+    }
+	
+	
+
+
+}
+
+
+
+
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 
     .gallery {
-        float:left;
-        max-width: 1024px;
-        
+
+
+            max-width: 100%;
     }
     
     .left{
@@ -188,7 +281,7 @@ Class name automatically added to element */
      margin: 0 auto;
     max-width: 1024px;
     font: 40px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    max-height: 100%;
+
     }
     
     .simply-scroll .simply-scroll-clip {
@@ -200,15 +293,6 @@ Class name automatically added to element */
         max-width: 1000px;
     }
 
-}
-
-
-
-
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
 
 }
 
