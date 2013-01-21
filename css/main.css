@@ -44,6 +44,9 @@ body {
 
 
 
+
+/**SCROLLING **/
+
 .slideshow {
   position: relative;
   overflow: hidden;
@@ -57,8 +60,8 @@ body {
   top: 0;
   height: 100%;
   width: 300%;
-  -webkit-animation: slideshow 20s linear infinite;
-  -moz-animation:    slideshow 20s linear infinite;
+  -webkit-animation: slideshow 30s linear infinite;
+  -moz-animation:    slideshow 30s linear infinite;
   
    -webkit-transform: translate3d(0, 0, 0);
 }
@@ -89,7 +92,7 @@ body {
     }
 }
 
-
+/** END SCROLLING **/
 
 
 
