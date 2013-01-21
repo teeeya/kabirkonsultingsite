@@ -1,53 +1,116 @@
 h1 {
-    margin: 60px 60px 60px 10px;
+    margin:60px 60px 60px 10px;
 }
 
 body {
-    /** background: url('../img/back.png') center center;
-     background-repeat: repeat; **/
+/** background: url('../img/back.png') center center;
+ background-repeat: repeat; **/
 
-    background: url('../img/back.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-width: 1024px;
+	background: url('../img/back.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-width: 1024px;
 }
 
-.everything {
-    margin: 30px auto;
+
+.everything{
+    margin:30px auto;
     max-width: 1024px;
     font: 12px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: rgba(255, 255, 255, 0.6);
     color: #666;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: none;
-    padding: 10px 20px 0px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+	padding: 10px 20px 0px;
+	
+	/** rounded corners **/
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	
+	/** box shadow **/
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.28);
+
 }
+
 
 .gallery {
-    width: 100%;
-    max-width: 500px;
-    float: right;
+    width:100%;
+    max-width:500px;
+    float:right;
 }
 
+
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+    height: 100%;
+
+}
+.images {
+    background: url('../img/logo-banner.png');
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: slideshow 20s linear infinite;
+  -moz-animation:    slideshow 20s linear infinite;
+  
+   -webkit-transform: translate3d(0, 0, 0);
+}
+@-webkit-keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -200%; }
+}
+@moz-keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -200%; }
+}
+
+
+@-webkit-keyframes moveSlideshow {
+    0%   { 
+        -webkit-transform: translateX(0);  
+    }    
+    100% { 
+        -webkit-transform: translateX(-200%);  
+    }
+}
+@-moz-keyframes moveSlideshow {
+    0%   { 
+        -moz-transform:    translateX(0); 
+    }    
+    100% { 
+        -moz-transform:    translateX(-200%); 
+    }
+}
+
+
+
+
+
+
+
+
 .footcontent {
-    /**background-image:url('../img/subtle-wood.gif');
-    background-repeat: repeat; **/
+
     margin: 5px;
     padding-top: 20px;
     clear: both;
+	height: 75px;
+padding-bottom: 10px;
 
 }
 
 .headcontent {
-    background: url('../img/header1.png') center center;
+    background: url('../img/header2.png') center center;	
     background-repeat: no-repeat;
     padding: 20px 0px 120px;
-    display: block;
+	display: block;
     margin-left: auto;
     margin-right: auto
 
@@ -71,8 +134,12 @@ body {
 
 .left {
     float: left;
-    max-width: 400px;
+    max-width:400px;
 }
+
+
+
+
 
 p {
     text-align: justify;
@@ -81,65 +148,169 @@ p {
 
 }
 
+
 a, a:visited {
     color: #C30;
     text-decoration: none;
     /*border-bottom: 1px dotted #C30;*/
 }
 
-/* scrolling */
 
-/* Container DIV - automatically generated */
-.simply-scroll-container {
-    position: relative;
+
+/* My own media queries */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    .gallery {
+        float:right;
+    }
 }
 
-/* Clip DIV - automatically generated */
-.simply-scroll-clip {
-    position: relative;
-    overflow: hidden;
+/* Portrait tablet to landscape and desktop */
+/* Portrait tablet to landscape and desktop */
+@media only screen 
+and (min-width: 600px)
+and (max-width: 900px) {
+
+ .gallery {
+	max-width: 75%;
+
+
+        
+    }
+    
+    .left{
+    max-width: 100%;
+    }
+    
+    
+    .headcontent{
+    max-width: 800px;
+    
+
+    }
+    .everything{
+     margin: 0 auto;
+    max-width: 800px;
+    font: 14px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    
+    .simply-scroll .simply-scroll-clip {
+    max-width: 700px;
+    
+    }
+    
+    .simply-scroll {
+        max-width: 700px;
+    }
+	
+	
+
+
 }
 
-/* UL/OL/DIV - the element that simplyScroll is inited on
-Class name automatically added to element */
-.simply-scroll-list {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+
+
+@media only screen 
+and (min-width: 500px)
+and (max-width: 800px) {
+
+ .gallery {
+max-width: 100%;
+
+
+        
+    }
+    
+    .left{
+    max-width: 100%;
+    }
+    
+    
+    .headcontent{
+    max-width: 800px;
+    
+
+    }
+    .everything{
+     margin: 0 auto;
+    max-width: 800px;
+    font: 14px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    
+    .simply-scroll .simply-scroll-clip {
+    max-width: 700px;
+    
+    }
+    
+    .simply-scroll {
+        max-width: 700px;
+    }
+	
+	
+
+
 }
 
-.simply-scroll-list li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+
+
+
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .gallery {
+
+
+            max-width: 100%;
+    }
+    
+    .left{
+    max-width: 100%;
+    
+    }
+    
+    
+    .headcontent{
+    max-width: 1024px;
+    
+
+    }
+    .everything{
+     margin: 0 auto;
+    max-width: 1024px;
+    font: 40px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    
+    .simply-scroll .simply-scroll-clip {
+    max-width: 1000px;
+    
+    }
+    
+    .simply-scroll {
+        max-width: 1000px;
+    }
+
+
 }
 
-.simply-scroll-list li img {
-    border: none;
-    display: block;
+
+
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
 }
 
-/* Custom class modifications - adds to / overrides above
+/* Landscape phones and down */
+@media (max-width: 480px) {
 
-.simply-scroll is default base class */
-
-/* Container DIV */
-.simply-scroll {
-    width: 1010px;
-    height: 80px;
-    margin-bottom: 1em;
 }
 
-/* Clip DIV */
-.simply-scroll .simply-scroll-clip {
-    width: 1010px;
-    height: 80px;
-}
-
-/* Explicitly set height/width of each list item */
-.simply-scroll .simply-scroll-list li {
-    float: left; /* Horizontal scroll only */
-    height: 40px;
-    margin: 5px;
-}
