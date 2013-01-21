@@ -1,41 +1,37 @@
 h1 {
-    margin:60px 60px 60px 10px;
+    margin: 60px 60px 60px 10px;
 }
 
 body {
-/** background: url('../img/back.png') center center;
- background-repeat: repeat; **/
+    /** background: url('../img/back.png') center center;
+     background-repeat: repeat; **/
 
-	background: url('../img/back.png') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	min-width: 1024px;
+    background: url('../img/back.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 1024px;
 }
 
-
-.everything{
-    margin:30px auto;
+.everything {
+    margin: 30px auto;
     max-width: 1024px;
     font: 12px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: rgba(255, 255, 255, 0.6);
     color: #666;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: none;
-	padding: 10px 20px 0px;
-	
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-
+    padding: 10px 20px 0px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
 }
 
-
 .gallery {
-    width:100%;
-    max-width:500px;
-    float:right;
+    width: 100%;
+    max-width: 500px;
+    float: right;
 }
 
 .footcontent {
@@ -48,10 +44,10 @@ body {
 }
 
 .headcontent {
-    background: url('../img/header1.png') center center;	
+    background: url('../img/header1.png') center center;
     background-repeat: no-repeat;
     padding: 20px 0px 120px;
-	display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto
 
@@ -75,12 +71,8 @@ body {
 
 .left {
     float: left;
-    max-width:400px;
+    max-width: 400px;
 }
-
-
-
-
 
 p {
     text-align: justify;
@@ -89,13 +81,11 @@ p {
 
 }
 
-
 a, a:visited {
     color: #C30;
     text-decoration: none;
     /*border-bottom: 1px dotted #C30;*/
 }
-
 
 /* scrolling */
 
@@ -153,77 +143,3 @@ Class name automatically added to element */
     height: 40px;
     margin: 5px;
 }
-
-/* My own media queries */
-
-/* Large desktop */
-@media (min-width: 1200px) {
-    .gallery {
-        float:right;
-    }
-}
-
-/* Portrait tablet to landscape and desktop */
-/* Portrait tablet to landscape and desktop */
-@media (max-width: 1200px) {
-
-    .gallery {
-        float:left;
-        max-width: 1024px;
-        
-    }
-    
-    .left{
-    max-width: 100%;
-    
-    }
-    
-    
-    .headcontent{
-    max-width: 1024px;
-    
-
-    }
-    .everything{
-     margin: 0 auto;
-    max-width: 1024px;
-    font: 40px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    max-height: 100%;
-    }
-    
-    .simply-scroll .simply-scroll-clip {
-    max-width: 1000px;
-    
-    }
-    
-    .simply-scroll {
-        max-width: 1000px;
-    }
-
-}
-
-
-
-
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-
-}
-
-
-
-
-
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-
-}
-
