@@ -158,3 +158,162 @@ a, a:visited {
     /*border-bottom: 1px dotted #C30;*/
 }
 
+
+
+/* My own media queries */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    .gallery {
+        float:right;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+/* Portrait tablet to landscape and desktop */
+@media only screen 
+and (min-width: 600px)
+and (max-width: 900px) {
+
+ .gallery {
+	max-width: 75%;
+
+
+        
+    }
+    
+    .left{
+    max-width: 100%;
+    }
+    
+    
+    .headcontent{
+    max-width: 800px;
+    
+
+    }
+    .everything{
+     margin: 0 auto;
+    max-width: 800px;
+    font: 14px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    
+    .simply-scroll .simply-scroll-clip {
+    max-width: 700px;
+    
+    }
+    
+    .simply-scroll {
+        max-width: 700px;
+    }
+	
+	
+
+
+}
+
+
+
+@media only screen 
+and (min-width: 500px)
+and (max-width: 800px) {
+
+ .gallery {
+max-width: 100%;
+
+
+        
+    }
+    
+    .left{
+    max-width: 100%;
+    }
+    
+    
+    .headcontent{
+    max-width: 800px;
+    
+
+    }
+    .everything{
+     margin: 0 auto;
+    max-width: 800px;
+    font: 14px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    
+    .simply-scroll .simply-scroll-clip {
+    max-width: 700px;
+    
+    }
+    
+    .simply-scroll {
+        max-width: 700px;
+    }
+	
+	
+
+
+}
+
+
+
+
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .gallery {
+
+
+            max-width: 100%;
+    }
+    
+    .left{
+    max-width: 100%;
+    
+    }
+    
+    
+    .headcontent{
+    max-width: 1024px;
+    
+
+    }
+    .everything{
+     margin: 0 auto;
+    max-width: 1024px;
+    font: 40px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    
+    .simply-scroll .simply-scroll-clip {
+    max-width: 1000px;
+    
+    }
+    
+    .simply-scroll {
+        max-width: 1000px;
+    }
+
+
+}
+
+
+
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+}
+
