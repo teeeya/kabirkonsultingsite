@@ -6,7 +6,7 @@ body {
 /** background: url('../img/back.png') center center;
  background-repeat: repeat; **/
 
-	background: url('../img/back.png') no-repeat center center fixed;
+	background: url('../img/back1.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -43,6 +43,28 @@ body {
 }
 
 
+.externalLinksContainer{
+  height:100%;
+   width: 100%;
+   margin: 0;
+   padding-top: 40px;
+   border: 0;
+
+
+}
+
+.externalLinks td{
+ vertical-align: middle;
+ text-align: center;
+
+}
+
+.externalLinks{
+
+
+   float: right;
+   
+   }
 
 
 /**SCROLLING **/
@@ -54,7 +76,7 @@ body {
 
 }
 .images {
-   background: url('../img/logo-banner.png');
+   background: url('../img/newbanner1.png');
     height: 75px;
     width: 4930px;
     position: absolute;
@@ -73,11 +95,11 @@ body {
 }
 @-webkit-keyframes slideshow {
   0%    { left: 0; }
-  100%  { left: -3530px; }
+  100%  { left: -3300px; }
 }
 @moz-keyframes slideshow {
   0%    { left: 0; }
-  100%  { left: -3530px; }
+  100%  { left: -3300px; }
 }
 
 
@@ -86,7 +108,7 @@ body {
         -webkit-transform: translateX(0);  
     }    
     100% { 
-        -webkit-transform: translateX(-3530px);  
+        -webkit-transform: translateX(-3300px);  
     }
 }
 @-moz-keyframes moveSlideshow {
@@ -94,7 +116,7 @@ body {
         -moz-transform:    translateX(0); 
     }    
     100% { 
-        -moz-transform:    translateX(-3530px); 
+        -moz-transform:    translateX(-3300px); 
     }
 }
 
@@ -111,7 +133,8 @@ body {
     padding-top: 25px;
     clear: both;
 	height: 75px;
-padding-bottom: 40px;
+	padding-bottom: 70px;
+	
 
 }
 
@@ -162,4 +185,31 @@ a, a:visited {
     color: #C30;
     text-decoration: none;
     /*border-bottom: 1px dotted #C30;*/
+}
+
+
+/** pre loader **/
+
+/* Preloader */
+
+#preloader {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#FFFEF7; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/slider/loading.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
